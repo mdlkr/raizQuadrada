@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: python3 -V
+      - name: Install dependencies
+      - run: pip install -r requirements.txt
       - name: Build
         run: echo "Build ok"
 
